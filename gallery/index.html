@@ -4,26 +4,26 @@
         <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Eleventy Photo Gallery Template</title>
+<title>John's Photo Gallery</title>
 <meta name="author" content="John Smith">
-<meta name="title" content="Eleventy Photo Gallery Template">
-<meta name="description" content="A photo gallery template with stock photos provided from Pexels. Add or remove images from the grid and customize your own image gallery!">
+<meta name="title" content="John's Photo Gallery">
+<meta name="description" content="A collection of images from John Smith's gallery.">
 <!-- Open Graph -->
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://eleventy-gallery.netlify.app">
+<meta property="og:url" content="https://eleventy-gallery.netlify.app/gallery">
 <meta property="og:locale" content="en_US">
-<meta property="og:title" content="Eleventy Photo Gallery Template">
-<meta property="og:description" content="A photo gallery template with stock photos provided from Pexels. Add or remove images from the grid and customize your own image gallery!">
-<meta property="og:image" content="https://eleventy-gallery.netlify.app/images/highway-water.jpg">
+<meta property="og:title" content="John's Photo Gallery">
+<meta property="og:description" content="A collection of images from John Smith's gallery.">
+<meta property="og:image" content="https://eleventy-gallery.netlify.app/gallery/images/highway-water.jpg">
 <meta property="og:image:alt" content="Terrace outside shop window with green plants and pink tree on night street">
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:url" content="https://eleventy-gallery.netlify.app">
-<meta name="twitter:title" content="Eleventy Photo Gallery Template">
-<meta name="twitter:description" content="A photo gallery template with stock photos provided from Pexels. Add or remove images from the grid and customize your own image gallery!">
-<meta name="twitter:image" content="https://eleventy-gallery.netlify.app/images/highway-water.jpg">
+<meta name="twitter:url" content="https://eleventy-gallery.netlify.app/gallery">
+<meta name="twitter:title" content="John's Photo Gallery">
+<meta name="twitter:description" content="A collection of images from John Smith's gallery.">
+<meta name="twitter:image" content="https://eleventy-gallery.netlify.app/gallery/images/highway-water.jpg">
 <meta name="twitter:image:alt" content="Terrace outside shop window with green plants and pink tree on night street">
-<link rel="canonical" href="https://eleventy-gallery.netlify.app">
+<link rel="canonical" href="https://eleventy-gallery.netlify.app/gallery">
         <meta name="theme-color" content="#fff">
         <meta name="background-color" content="#fff">
         <link rel="apple-touch-icon" sizes="180x180" href="/favicon_data/apple-touch-icon.png">
@@ -63,268 +63,338 @@
         
 <main id="main">
     
-<div class="page-banner">
-  <h1>Photo Gallery</h1>
-  <p>A collection of recent images. Stock photos currently provided from Pexels. Add or remove images from the grid and customize your own image gallery!</p>
-</div>
+<h1 class="ft-h1">John&#39;s Photo Gallery</h1>
 
 <div class="gallery">
-  <ul class="image-grid">
-    
-    <li class="image-container">
-        <a href="/gallery/terrace-with-green-plants-on-night-street" aria-label="Gallery image Terrace with green plants on night street">
-            <picture>
+    <ul class="gallery-list">
+        
+        <li class="gallery-item">
+            <div class="image-block">
+                <a href="terrace-with-green-plants-on-night-street" aria-label="Gallery image Terrace with green plants on night street">
+                <picture>
                     <source 
                         type="image/webp"
                         srcSet="/images/terrace-window-1024.webp 1024w, /images/terrace-window-640.webp 640w, /images/terrace-window-480.webp 480w, /images/terrace-window-320.webp 320w"
-                        sizes="(min-width: 600px) 50vw, (min-width: 800px) 100vw, 33.3vw"
+                        sizes="(max-width: 480px) 33.3vw, (min-width: 640px) 50vw, (min-width: 950px) 50vw, 33.3vw"
                     >
                     <img 
                     srcSet="/images/terrace-window-1024.jpeg 1024w, /images/terrace-window-640.jpeg 640w, /images/terrace-window-480.jpeg 480w, /images/terrace-window-320.jpeg 320w"
-                    sizes="(min-width: 600px) 50vw, (min-width: 800px) 100vw, 33.3vw"
+                    sizes="(max-width: 480px) 33.3vw, (min-width: 640px) 50vw, (min-width: 950px) 50vw, 33.3vw"
                     src="/images/terrace-window-1024.jpeg"
                     alt="Terrace outside shop window with green plants and pink tree on night street"
                     loading="lazy"
-                    class="grid-image"
-                    width="640"
-                    height="400" >
+                    class="gallery-photo"
+                    width="768"
+                    height="600" >
                 </picture>
-        </a>
-    </li>
-    
-    <li class="image-container">
-        <a href="/gallery/highway-covered-in-water" aria-label="Gallery image Highway covered in water">
-            <picture>
+                </a>
+                <div class="block-details">
+                    <p>October 20, 2020</p>
+                    <h2><a href="/gallery/terrace-with-green-plants-on-night-street">Terrace with green plants on night street</a></h2>
+                </div>
+            </div>
+        </li>
+        
+        <li class="gallery-item">
+            <div class="image-block">
+                <a href="highway-covered-in-water" aria-label="Gallery image Highway covered in water">
+                <picture>
                     <source 
                         type="image/webp"
                         srcSet="/images/highway-water-1024.webp 1024w, /images/highway-water-640.webp 640w, /images/highway-water-480.webp 480w, /images/highway-water-320.webp 320w"
-                        sizes="(min-width: 600px) 50vw, (min-width: 800px) 100vw, 33.3vw"
+                        sizes="(max-width: 480px) 33.3vw, (min-width: 640px) 50vw, (min-width: 950px) 50vw, 33.3vw"
                     >
                     <img 
                     srcSet="/images/highway-water-1024.jpeg 1024w, /images/highway-water-640.jpeg 640w, /images/highway-water-480.jpeg 480w, /images/highway-water-320.jpeg 320w"
-                    sizes="(min-width: 600px) 50vw, (min-width: 800px) 100vw, 33.3vw"
+                    sizes="(max-width: 480px) 33.3vw, (min-width: 640px) 50vw, (min-width: 950px) 50vw, 33.3vw"
                     src="/images/highway-water-1024.jpeg"
                     alt="Skybridge over highway covered in water"
                     loading="lazy"
-                    class="grid-image"
-                    width="640"
-                    height="400" >
+                    class="gallery-photo"
+                    width="768"
+                    height="600" >
                 </picture>
-        </a>
-    </li>
-    
-    <li class="image-container">
-        <a href="/gallery/brown-painted-wall-on-dim-light" aria-label="Gallery image Brown painted wall on dim light">
-            <picture>
+                </a>
+                <div class="block-details">
+                    <p>October 20, 2020</p>
+                    <h2><a href="/gallery/highway-covered-in-water">Highway covered in water</a></h2>
+                </div>
+            </div>
+        </li>
+        
+        <li class="gallery-item">
+            <div class="image-block">
+                <a href="brown-painted-wall-on-dim-light" aria-label="Gallery image Brown painted wall on dim light">
+                <picture>
                     <source 
                         type="image/webp"
                         srcSet="/images/benches-1024.webp 1024w, /images/benches-640.webp 640w, /images/benches-480.webp 480w, /images/benches-320.webp 320w"
-                        sizes="(min-width: 600px) 50vw, (min-width: 800px) 100vw, 33.3vw"
+                        sizes="(max-width: 480px) 33.3vw, (min-width: 640px) 50vw, (min-width: 950px) 50vw, 33.3vw"
                     >
                     <img 
                     srcSet="/images/benches-1024.jpeg 1024w, /images/benches-640.jpeg 640w, /images/benches-480.jpeg 480w, /images/benches-320.jpeg 320w"
-                    sizes="(min-width: 600px) 50vw, (min-width: 800px) 100vw, 33.3vw"
+                    sizes="(max-width: 480px) 33.3vw, (min-width: 640px) 50vw, (min-width: 950px) 50vw, 33.3vw"
                     src="/images/benches-1024.jpeg"
                     alt="Brown painted wall with two benches and dim light above"
                     loading="lazy"
-                    class="grid-image"
-                    width="640"
-                    height="400" >
+                    class="gallery-photo"
+                    width="768"
+                    height="600" >
                 </picture>
-        </a>
-    </li>
-    
-    <li class="image-container">
-        <a href="/gallery/red-light-streaks-across-a-street-intersection-at-night" aria-label="Gallery image Red light streaks across a street intersection at night">
-            <picture>
+                </a>
+                <div class="block-details">
+                    <p>October 18, 2020</p>
+                    <h2><a href="/gallery/brown-painted-wall-on-dim-light">Brown painted wall on dim light</a></h2>
+                </div>
+            </div>
+        </li>
+        
+        <li class="gallery-item">
+            <div class="image-block">
+                <a href="red-light-streaks-across-a-street-intersection-at-night" aria-label="Gallery image Red light streaks across a street intersection at night">
+                <picture>
                     <source 
                         type="image/webp"
                         srcSet="/images/light-streaks-1024.webp 1024w, /images/light-streaks-640.webp 640w, /images/light-streaks-480.webp 480w, /images/light-streaks-320.webp 320w"
-                        sizes="(min-width: 600px) 50vw, (min-width: 800px) 100vw, 33.3vw"
+                        sizes="(max-width: 480px) 33.3vw, (min-width: 640px) 50vw, (min-width: 950px) 50vw, 33.3vw"
                     >
                     <img 
                     srcSet="/images/light-streaks-1024.jpeg 1024w, /images/light-streaks-640.jpeg 640w, /images/light-streaks-480.jpeg 480w, /images/light-streaks-320.jpeg 320w"
-                    sizes="(min-width: 600px) 50vw, (min-width: 800px) 100vw, 33.3vw"
+                    sizes="(max-width: 480px) 33.3vw, (min-width: 640px) 50vw, (min-width: 950px) 50vw, 33.3vw"
                     src="/images/light-streaks-1024.jpeg"
                     alt="Red light streaks across a street intersection at night"
                     loading="lazy"
-                    class="grid-image"
-                    width="640"
-                    height="400" >
+                    class="gallery-photo"
+                    width="768"
+                    height="600" >
                 </picture>
-        </a>
-    </li>
-    
-    <li class="image-container">
-        <a href="/gallery/abstract-architecture-black-and-white-boardwalk" aria-label="Gallery image Abstract architecture black and white boardwalk">
-            <picture>
+                </a>
+                <div class="block-details">
+                    <p>October 16, 2020</p>
+                    <h2><a href="/gallery/red-light-streaks-across-a-street-intersection-at-night">Red light streaks across a street intersection at night</a></h2>
+                </div>
+            </div>
+        </li>
+        
+        <li class="gallery-item">
+            <div class="image-block">
+                <a href="abstract-architecture-black-and-white-boardwalk" aria-label="Gallery image Abstract architecture black and white boardwalk">
+                <picture>
                     <source 
                         type="image/webp"
                         srcSet="/images/boardwalk-1024.webp 1024w, /images/boardwalk-640.webp 640w, /images/boardwalk-480.webp 480w, /images/boardwalk-320.webp 320w"
-                        sizes="(min-width: 600px) 50vw, (min-width: 800px) 100vw, 33.3vw"
+                        sizes="(max-width: 480px) 33.3vw, (min-width: 640px) 50vw, (min-width: 950px) 50vw, 33.3vw"
                     >
                     <img 
                     srcSet="/images/boardwalk-1024.jpeg 1024w, /images/boardwalk-640.jpeg 640w, /images/boardwalk-480.jpeg 480w, /images/boardwalk-320.jpeg 320w"
-                    sizes="(min-width: 600px) 50vw, (min-width: 800px) 100vw, 33.3vw"
+                    sizes="(max-width: 480px) 33.3vw, (min-width: 640px) 50vw, (min-width: 950px) 50vw, 33.3vw"
                     src="/images/boardwalk-1024.jpeg"
                     alt="Abstract architecture black and white boardwalk with glass like floor"
                     loading="lazy"
-                    class="grid-image"
-                    width="640"
-                    height="400" >
+                    class="gallery-photo"
+                    width="768"
+                    height="600" >
                 </picture>
-        </a>
-    </li>
-    
-    <li class="image-container">
-        <a href="/gallery/person-holding-glass-mason-jar-with-night-sky-background" aria-label="Gallery image Person holding glass mason jar with night sky background">
-            <picture>
+                </a>
+                <div class="block-details">
+                    <p>October 14, 2020</p>
+                    <h2><a href="/gallery/abstract-architecture-black-and-white-boardwalk">Abstract architecture black and white boardwalk</a></h2>
+                </div>
+            </div>
+        </li>
+        
+        <li class="gallery-item">
+            <div class="image-block">
+                <a href="person-holding-glass-mason-jar-with-night-sky-background" aria-label="Gallery image Person holding glass mason jar with night sky background">
+                <picture>
                     <source 
                         type="image/webp"
                         srcSet="/images/glass-jar-1024.webp 1024w, /images/glass-jar-640.webp 640w, /images/glass-jar-480.webp 480w, /images/glass-jar-320.webp 320w"
-                        sizes="(min-width: 600px) 50vw, (min-width: 800px) 100vw, 33.3vw"
+                        sizes="(max-width: 480px) 33.3vw, (min-width: 640px) 50vw, (min-width: 950px) 50vw, 33.3vw"
                     >
                     <img 
                     srcSet="/images/glass-jar-1024.jpeg 1024w, /images/glass-jar-640.jpeg 640w, /images/glass-jar-480.jpeg 480w, /images/glass-jar-320.jpeg 320w"
-                    sizes="(min-width: 600px) 50vw, (min-width: 800px) 100vw, 33.3vw"
+                    sizes="(max-width: 480px) 33.3vw, (min-width: 640px) 50vw, (min-width: 950px) 50vw, 33.3vw"
                     src="/images/glass-jar-1024.jpeg"
                     alt="Person holding glass mason jar with night sky background"
                     loading="lazy"
-                    class="grid-image"
-                    width="640"
-                    height="400" >
+                    class="gallery-photo"
+                    width="768"
+                    height="600" >
                 </picture>
-        </a>
-    </li>
-    
-    <li class="image-container">
-        <a href="/gallery/radio-city-music-hall-during-night-time" aria-label="Gallery image Radio City Music Hall During Night Time">
-            <picture>
+                </a>
+                <div class="block-details">
+                    <p>October 12, 2020</p>
+                    <h2><a href="/gallery/person-holding-glass-mason-jar-with-night-sky-background">Person holding glass mason jar with night sky background</a></h2>
+                </div>
+            </div>
+        </li>
+        
+        <li class="gallery-item">
+            <div class="image-block">
+                <a href="radio-city-music-hall-during-night-time" aria-label="Gallery image Radio City Music Hall During Night Time">
+                <picture>
                     <source 
                         type="image/webp"
                         srcSet="/images/music-hall-1024.webp 1024w, /images/music-hall-640.webp 640w, /images/music-hall-480.webp 480w, /images/music-hall-320.webp 320w"
-                        sizes="(min-width: 600px) 50vw, (min-width: 800px) 100vw, 33.3vw"
+                        sizes="(max-width: 480px) 33.3vw, (min-width: 640px) 50vw, (min-width: 950px) 50vw, 33.3vw"
                     >
                     <img 
                     srcSet="/images/music-hall-1024.jpeg 1024w, /images/music-hall-640.jpeg 640w, /images/music-hall-480.jpeg 480w, /images/music-hall-320.jpeg 320w"
-                    sizes="(min-width: 600px) 50vw, (min-width: 800px) 100vw, 33.3vw"
+                    sizes="(max-width: 480px) 33.3vw, (min-width: 640px) 50vw, (min-width: 950px) 50vw, 33.3vw"
                     src="/images/music-hall-1024.jpeg"
                     alt="Music hall with bright lights during night time"
                     loading="lazy"
-                    class="grid-image"
-                    width="640"
-                    height="400" >
+                    class="gallery-photo"
+                    width="768"
+                    height="600" >
                 </picture>
-        </a>
-    </li>
-    
-    <li class="image-container">
-        <a href="/gallery/city-building-office-architecture" aria-label="Gallery image City Building Office Architecture">
-            <picture>
+                </a>
+                <div class="block-details">
+                    <p>October 11, 2020</p>
+                    <h2><a href="/gallery/radio-city-music-hall-during-night-time">Radio City Music Hall During Night Time</a></h2>
+                </div>
+            </div>
+        </li>
+        
+        <li class="gallery-item">
+            <div class="image-block">
+                <a href="city-building-office-architecture" aria-label="Gallery image City Building Office Architecture">
+                <picture>
                     <source 
                         type="image/webp"
                         srcSet="/images/business-center-1024.webp 1024w, /images/business-center-640.webp 640w, /images/business-center-480.webp 480w, /images/business-center-320.webp 320w"
-                        sizes="(min-width: 600px) 50vw, (min-width: 800px) 100vw, 33.3vw"
+                        sizes="(max-width: 480px) 33.3vw, (min-width: 640px) 50vw, (min-width: 950px) 50vw, 33.3vw"
                     >
                     <img 
                     srcSet="/images/business-center-1024.jpeg 1024w, /images/business-center-640.jpeg 640w, /images/business-center-480.jpeg 480w, /images/business-center-320.jpeg 320w"
-                    sizes="(min-width: 600px) 50vw, (min-width: 800px) 100vw, 33.3vw"
+                    sizes="(max-width: 480px) 33.3vw, (min-width: 640px) 50vw, (min-width: 950px) 50vw, 33.3vw"
                     src="/images/business-center-1024.jpeg"
                     alt="Tall highrise office building with winding architecture"
                     loading="lazy"
-                    class="grid-image"
-                    width="640"
-                    height="400" >
+                    class="gallery-photo"
+                    width="768"
+                    height="600" >
                 </picture>
-        </a>
-    </li>
-    
-    <li class="image-container">
-        <a href="/gallery/buildings-during-nighttime" aria-label="Gallery image Buildings during nighttime">
-            <picture>
+                </a>
+                <div class="block-details">
+                    <p>October 10, 2020</p>
+                    <h2><a href="/gallery/city-building-office-architecture">City Building Office Architecture</a></h2>
+                </div>
+            </div>
+        </li>
+        
+        <li class="gallery-item">
+            <div class="image-block">
+                <a href="buildings-during-nighttime" aria-label="Gallery image Buildings during nighttime">
+                <picture>
                     <source 
                         type="image/webp"
                         srcSet="/images/highrises-night-1024.webp 1024w, /images/highrises-night-640.webp 640w, /images/highrises-night-480.webp 480w, /images/highrises-night-320.webp 320w"
-                        sizes="(min-width: 600px) 50vw, (min-width: 800px) 100vw, 33.3vw"
+                        sizes="(max-width: 480px) 33.3vw, (min-width: 640px) 50vw, (min-width: 950px) 50vw, 33.3vw"
                     >
                     <img 
                     srcSet="/images/highrises-night-1024.jpeg 1024w, /images/highrises-night-640.jpeg 640w, /images/highrises-night-480.jpeg 480w, /images/highrises-night-320.jpeg 320w"
-                    sizes="(min-width: 600px) 50vw, (min-width: 800px) 100vw, 33.3vw"
+                    sizes="(max-width: 480px) 33.3vw, (min-width: 640px) 50vw, (min-width: 950px) 50vw, 33.3vw"
                     src="/images/highrises-night-1024.jpeg"
                     alt="Buildings during nighttime with orange lighting and water below"
                     loading="lazy"
-                    class="grid-image"
-                    width="640"
-                    height="400" >
+                    class="gallery-photo"
+                    width="768"
+                    height="600" >
                 </picture>
-        </a>
-    </li>
-    
-    <li class="image-container">
-        <a href="/gallery/water-droplet-digital-wallpaper" aria-label="Gallery image Water Droplet Digital Wallpaper">
-            <picture>
+                </a>
+                <div class="block-details">
+                    <p>October 9, 2020</p>
+                    <h2><a href="/gallery/buildings-during-nighttime">Buildings during nighttime</a></h2>
+                </div>
+            </div>
+        </li>
+        
+        <li class="gallery-item">
+            <div class="image-block">
+                <a href="water-droplet-digital-wallpaper" aria-label="Gallery image Water Droplet Digital Wallpaper">
+                <picture>
                     <source 
                         type="image/webp"
                         srcSet="/images/water-drop-1024.webp 1024w, /images/water-drop-640.webp 640w, /images/water-drop-480.webp 480w, /images/water-drop-320.webp 320w"
-                        sizes="(min-width: 600px) 50vw, (min-width: 800px) 100vw, 33.3vw"
+                        sizes="(max-width: 480px) 33.3vw, (min-width: 640px) 50vw, (min-width: 950px) 50vw, 33.3vw"
                     >
                     <img 
                     srcSet="/images/water-drop-1024.jpeg 1024w, /images/water-drop-640.jpeg 640w, /images/water-drop-480.jpeg 480w, /images/water-drop-320.jpeg 320w"
-                    sizes="(min-width: 600px) 50vw, (min-width: 800px) 100vw, 33.3vw"
+                    sizes="(max-width: 480px) 33.3vw, (min-width: 640px) 50vw, (min-width: 950px) 50vw, 33.3vw"
                     src="/images/water-drop-1024.jpeg"
                     alt="Rain drop bursting water particles upwards into the air"
                     loading="lazy"
-                    class="grid-image"
-                    width="640"
-                    height="400" >
+                    class="gallery-photo"
+                    width="768"
+                    height="600" >
                 </picture>
-        </a>
-    </li>
-    
-    <li class="image-container">
-        <a href="/gallery/man-walking-on-the-empty-street" aria-label="Gallery image Man walking on the empty street">
-            <picture>
+                </a>
+                <div class="block-details">
+                    <p>October 11, 2020</p>
+                    <h2><a href="/gallery/water-droplet-digital-wallpaper">Water Droplet Digital Wallpaper</a></h2>
+                </div>
+            </div>
+        </li>
+        
+        <li class="gallery-item">
+            <div class="image-block">
+                <a href="man-walking-on-the-empty-street" aria-label="Gallery image Man walking on the empty street">
+                <picture>
                     <source 
                         type="image/webp"
                         srcSet="/images/empty-road-1024.webp 1024w, /images/empty-road-640.webp 640w, /images/empty-road-480.webp 480w, /images/empty-road-320.webp 320w"
-                        sizes="(min-width: 600px) 50vw, (min-width: 800px) 100vw, 33.3vw"
+                        sizes="(max-width: 480px) 33.3vw, (min-width: 640px) 50vw, (min-width: 950px) 50vw, 33.3vw"
                     >
                     <img 
                     srcSet="/images/empty-road-1024.jpeg 1024w, /images/empty-road-640.jpeg 640w, /images/empty-road-480.jpeg 480w, /images/empty-road-320.jpeg 320w"
-                    sizes="(min-width: 600px) 50vw, (min-width: 800px) 100vw, 33.3vw"
+                    sizes="(max-width: 480px) 33.3vw, (min-width: 640px) 50vw, (min-width: 950px) 50vw, 33.3vw"
                     src="/images/empty-road-1024.jpeg"
                     alt="An empty road during daytime with fog in the background"
                     loading="lazy"
-                    class="grid-image"
-                    width="640"
-                    height="400" >
+                    class="gallery-photo"
+                    width="768"
+                    height="600" >
                 </picture>
-        </a>
-    </li>
-    
-    <li class="image-container">
-        <a href="/gallery/gasoline-station-during-nighttime" aria-label="Gallery image Gasoline station during nighttime">
-            <picture>
+                </a>
+                <div class="block-details">
+                    <p>October 15, 2020</p>
+                    <h2><a href="/gallery/man-walking-on-the-empty-street">Man walking on the empty street</a></h2>
+                </div>
+            </div>
+        </li>
+        
+        <li class="gallery-item">
+            <div class="image-block">
+                <a href="gasoline-station-during-nighttime" aria-label="Gallery image Gasoline station during nighttime">
+                <picture>
                     <source 
                         type="image/webp"
                         srcSet="/images/gas-station-1024.webp 1024w, /images/gas-station-640.webp 640w, /images/gas-station-480.webp 480w, /images/gas-station-320.webp 320w"
-                        sizes="(min-width: 600px) 50vw, (min-width: 800px) 100vw, 33.3vw"
+                        sizes="(max-width: 480px) 33.3vw, (min-width: 640px) 50vw, (min-width: 950px) 50vw, 33.3vw"
                     >
                     <img 
                     srcSet="/images/gas-station-1024.jpeg 1024w, /images/gas-station-640.jpeg 640w, /images/gas-station-480.jpeg 480w, /images/gas-station-320.jpeg 320w"
-                    sizes="(min-width: 600px) 50vw, (min-width: 800px) 100vw, 33.3vw"
+                    sizes="(max-width: 480px) 33.3vw, (min-width: 640px) 50vw, (min-width: 950px) 50vw, 33.3vw"
                     src="/images/gas-station-1024.jpeg"
                     alt="Gasoline station during nighttime with glowing red roof lights"
                     loading="lazy"
-                    class="grid-image"
-                    width="640"
-                    height="400" >
+                    class="gallery-photo"
+                    width="768"
+                    height="600" >
                 </picture>
-        </a>
-    </li>
-    
-  </ul>
+                </a>
+                <div class="block-details">
+                    <p>October 23, 2020</p>
+                    <h2><a href="/gallery/gasoline-station-during-nighttime">Gasoline station during nighttime</a></h2>
+                </div>
+            </div>
+        </li>
+        
+    </ul>
 </div>
+
 </main>
 
         <footer>
